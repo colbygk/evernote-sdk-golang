@@ -1,0 +1,20 @@
+version: '3.4'
+volumes:
+  golang_libs:
+  runtime_data:
+
+services:
+  app:
+    container_name: evernote-sdk-golang
+    hostname: evernote-sdk-golang
+    build:  
+      context: ./
+      dockerfile: Dockerfile
+    image: evernote-sdk-golang:latest
+    volumes:
+      - type: bind
+        source: ./
+        target: /app
+        volume:
+          nocopy: true
+      - runtime_data:/runtime
