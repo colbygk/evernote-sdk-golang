@@ -16,9 +16,9 @@ dkd() {
 
 ```
 dkc build
-dkd evrnt-app
+dkd evernote-sdk-golang
 ```
 
-- These steps will build a docker image based on the directives in `docker-compose.yml` and `Dockerfile` called `evrnt-app`. This image can then be run as a container and makes the `$(PWD)` or current working directory to `/app` in the container when it is running.
+- These steps will build a docker image based on the directives in `docker-compose.yml` and `Dockerfile` called `evernote-sdk-golang`. This image can then be run as a container and makes the `$(PWD)` or current working directory to `/app` in the container when it is running.
 - You now have a docker isolated development environment.
 
